@@ -18,9 +18,9 @@ export const Header: React.FC<HeaderProps> = ({
   const isOrganiserMode = activeTab === 'organiser';
 
   return (
-    <header id="header-main" className="sticky top-0 z-40 bg-black/95 backdrop-blur-md border-b border-neutral-800/80 shadow-xl shadow-black/80">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 sm:h-22">
+    <header id="header-main" className="sticky top-0 z-40 bg-black/95 backdrop-blur-md border-b border-neutral-800/80 shadow-xl shadow-black/80 pt-[env(safe-area-inset-top,0px)]">
+      <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           
           {/* Brand & Edition: Click the Logo to open Organiser Portal (Password: lvl.) */}
           <div 
@@ -64,11 +64,11 @@ export const Header: React.FC<HeaderProps> = ({
                   Lookbook
                 </button>
                 <a
-                  href="https://www.instagram.com/luxevoguelifestyle?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
+                  href="https://www.instagram.com/luxevoguelifestyle_/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300 hover:text-white hover:border-[#9e1b32] transition-colors"
-                  title="Follow @luxevoguelifestyle on Instagram"
+                  title="Follow @luxevoguelifestyle_ on Instagram"
                 >
                   <Instagram className="w-3.5 h-3.5 text-rose-400" />
                   <span className="normal-case font-mono text-[11px]">Instagram</span>
@@ -90,11 +90,11 @@ export const Header: React.FC<HeaderProps> = ({
             {!isOrganiserMode && (
               <div className="flex md:hidden items-center gap-1.5">
                 <a
-                  href="https://www.instagram.com/luxevoguelifestyle?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
+                  href="https://www.instagram.com/luxevoguelifestyle_/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-neutral-900 border border-neutral-800 text-rose-400 hover:text-white hover:border-red-600 transition-colors"
-                  title="Instagram @luxevoguelifestyle"
+                  title="Instagram @luxevoguelifestyle_"
                 >
                   <Instagram className="w-3.5 h-3.5" />
                 </a>
@@ -114,10 +114,11 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 id="btn-back-to-showcase"
                 onClick={() => setActiveTab('buy')}
-                className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-neutral-900 border border-neutral-700 text-neutral-200 hover:text-white hover:border-red-600 hover:bg-neutral-800 transition-all cursor-pointer shadow-md"
+                className="flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-neutral-900 border border-neutral-700 text-neutral-200 hover:text-white hover:border-red-600 hover:bg-neutral-800 transition-all cursor-pointer shadow-md min-h-[40px]"
               >
-                <ArrowLeft className="w-4 h-4 text-red-500" />
-                <span>Exit Organiser Portal</span>
+                <ArrowLeft className="w-4 h-4 text-red-500 shrink-0" />
+                <span className="hidden xs:inline">Exit Organiser</span>
+                <span className="xs:hidden">Exit</span>
               </button>
             ) : (
               <button
@@ -127,9 +128,9 @@ export const Header: React.FC<HeaderProps> = ({
                   const el = document.getElementById('ticket-tiers-section');
                   if (el) el.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm font-bold bg-gradient-to-r from-[#801424] via-[#9e1b32] to-[#b91c1c] hover:from-[#9e1b32] hover:to-[#dc2626] text-white shadow-lg shadow-[#801424]/30 transition-all cursor-pointer"
+                className="flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-6 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold bg-gradient-to-r from-[#801424] via-[#9e1b32] to-[#b91c1c] hover:from-[#9e1b32] hover:to-[#dc2626] text-white shadow-lg shadow-[#801424]/30 transition-all cursor-pointer min-h-[40px]"
               >
-                <Ticket className="w-4 h-4" />
+                <Ticket className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
                 <span>Get Passes</span>
               </button>
             )}

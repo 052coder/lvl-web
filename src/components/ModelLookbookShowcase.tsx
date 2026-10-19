@@ -149,30 +149,30 @@ export const ModelLookbookShowcase: React.FC = () => {
 
       {/* Expanded Modal for Full Lookbook Inspection */}
       {selectedModel && (
-        <div className="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-200">
-          <div className="relative w-full max-w-4xl bg-neutral-950 border border-neutral-800 rounded-3xl shadow-2xl overflow-hidden text-neutral-100 flex flex-col md:flex-row max-h-[90vh]">
+        <div className="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl flex items-center justify-center p-2.5 sm:p-6 pb-safe pt-safe touch-scroll animate-in fade-in duration-200">
+          <div className="relative w-full max-w-4xl bg-neutral-950 border border-neutral-800 rounded-3xl shadow-2xl overflow-hidden text-neutral-100 flex flex-col md:flex-row max-h-[92dvh] sm:max-h-[90vh]">
             
             {/* Close Button */}
             <button
               type="button"
               onClick={() => setSelectedModel(null)}
-              className="absolute top-4 right-4 z-30 p-2.5 rounded-full bg-black/80 hover:bg-neutral-800 border border-neutral-700 text-white transition-colors cursor-pointer"
+              className="absolute top-3 right-3 sm:top-4 sm:right-4 z-30 p-2 sm:p-2.5 rounded-full bg-black/80 hover:bg-neutral-800 border border-neutral-700 text-white transition-colors cursor-pointer"
             >
-              <X className="w-5 h-5" />
+              <X className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
 
             {/* Left Poster Image View */}
-            <div className="md:w-1/2 bg-black relative flex items-center justify-center p-4 min-h-[320px] md:min-h-[500px]">
+            <div className="md:w-1/2 bg-black relative flex items-center justify-center p-3 sm:p-4 min-h-[200px] sm:min-h-[280px] md:min-h-[500px] max-h-[40vh] md:max-h-none shrink-0">
               <img
                 src={selectedModel.image}
                 alt={selectedModel.name}
                 referrerPolicy="no-referrer"
-                className="max-h-[70vh] w-auto object-contain rounded-xl shadow-2xl"
+                className="max-h-[38vh] md:max-h-[70vh] w-auto object-contain rounded-xl shadow-2xl"
               />
             </div>
 
             {/* Right Details View */}
-            <div className="md:w-1/2 p-6 sm:p-8 flex flex-col justify-between overflow-y-auto space-y-6">
+            <div className="md:w-1/2 p-4 sm:p-8 flex flex-col justify-between overflow-y-auto space-y-4 sm:space-y-6 flex-1 touch-scroll">
               
               <div className="space-y-4">
                 <div className="space-y-1">

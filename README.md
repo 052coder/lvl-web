@@ -13,7 +13,7 @@ Atelier LVL is an exclusive fashion ticketing web application featuring:
 - **Kenyan Phone & Email Validation**: Enforces valid `07...` and `011...` 10-digit Kenyan phone numbers and verified email domains.
 - **Digital Passes & QR Gate Scanner**: High-contrast, encrypted passes with offline-capable QR code check-in scanner for event gate staff.
 - **Organiser Admin Portal**: Complete control over ticket tiers, event dates, pricing, color themes, attendee lists, complimentary passes, and real-time revenue analytics.
-- **Social Integration**: Connected to official Atelier LVL Instagram ([@luxevoguelifestyle](https://www.instagram.com/luxevoguelifestyle)) and TikTok ([@_luxevoguelifestyle_](https://www.tiktok.com/@_luxevoguelifestyle_)).
+- **Social Integration**: Connected to official Atelier LVL Instagram ([@luxevoguelifestyle_](https://www.instagram.com/luxevoguelifestyle_/)) and TikTok ([@_luxevoguelifestyle_](https://www.tiktok.com/@_luxevoguelifestyle_)).
 
 ## Tech Stack
 

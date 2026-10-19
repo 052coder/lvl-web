@@ -226,7 +226,7 @@ export default function App() {
       )}
 
       {/* Footer */}
-      <footer id="main-footer" className="bg-black border-t border-neutral-900 py-10">
+      <footer id="main-footer" className="bg-black border-t border-neutral-900 py-10 pb-safe">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
           
           <div className="flex items-center gap-2">
@@ -239,14 +239,14 @@ export default function App() {
 
           <div className="flex flex-wrap items-center gap-4 sm:gap-6">
             <a
-              href="https://www.instagram.com/luxevoguelifestyle?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
+              href="https://www.instagram.com/luxevoguelifestyle_/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-neutral-400 hover:text-white transition-colors"
-              title="Instagram @luxevoguelifestyle"
+              title="Instagram @luxevoguelifestyle_"
             >
               <Instagram className="w-4 h-4 text-rose-400" />
-              <span>@luxevoguelifestyle</span>
+              <span>@luxevoguelifestyle_</span>
             </a>
             <a
               href="https://www.tiktok.com/@_luxevoguelifestyle_?is_from_webapp=1&sender_device=pc"

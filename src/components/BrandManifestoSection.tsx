@@ -202,7 +202,7 @@ export const BrandManifestoSection: React.FC = () => {
 
           <div className="flex flex-wrap items-center gap-3 shrink-0">
             <a
-              href="https://www.instagram.com/luxevoguelifestyle?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
+              href="https://www.instagram.com/luxevoguelifestyle_/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2.5 rounded-full bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 hover:border-neutral-500 text-neutral-200 hover:text-white font-bold text-xs uppercase tracking-wider flex items-center gap-2 transition-all cursor-pointer"

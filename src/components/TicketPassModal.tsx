@@ -66,7 +66,7 @@ export const TicketPassModal: React.FC<TicketPassModalProps> = ({
   const isGroup = ticket.admitCount > 1;
 
   return (
-    <div id="ticket-pass-modal" className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-md flex items-center justify-center p-4 sm:p-6">
+    <div id="ticket-pass-modal" className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-md flex items-center justify-center p-2.5 sm:p-6 pb-safe pt-safe touch-scroll">
       <div className="relative w-full max-w-lg bg-neutral-900 border border-neutral-800 rounded-3xl shadow-2xl overflow-hidden text-neutral-100 animate-in fade-in zoom-in-95 duration-200">
         
         {/* Top Control Bar */}
@@ -103,7 +103,7 @@ export const TicketPassModal: React.FC<TicketPassModalProps> = ({
         </div>
 
         {/* Printable Ticket Container */}
-        <div id="printable-ticket" className="p-6 space-y-6">
+        <div id="printable-ticket" className="p-3.5 sm:p-6 space-y-4 sm:space-y-6">
           
           {/* Ticket Card Component */}
           <div className={`relative rounded-2xl overflow-hidden border-2 transition-all ${

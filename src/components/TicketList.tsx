@@ -110,7 +110,7 @@ export const TicketList: React.FC<TicketListProps> = ({ tiers, onSelectTier }) =
                 borderColor: accentColor,
                 boxShadow: `0 20px 45px -15px ${accentColor}35`
               }}
-              className="relative rounded-3xl flex flex-col justify-between transition-all duration-300 bg-gradient-to-b from-neutral-900 via-neutral-950 to-black border-2 p-6 sm:p-7"
+              className="relative rounded-3xl flex flex-col justify-between transition-all duration-300 bg-gradient-to-b from-neutral-900 via-neutral-950 to-black border-2 p-4.5 sm:p-7"
             >
               {/* Top Tag Pill if any */}
               {tier.tag && (
@@ -260,9 +260,9 @@ export const TicketList: React.FC<TicketListProps> = ({ tiers, onSelectTier }) =
                         type="button"
                         onClick={() => updateQuantity(tier.id, -1, seatsAvailable)}
                         disabled={qty <= 1}
-                        className="w-7 h-7 rounded-lg bg-neutral-800 text-neutral-200 hover:bg-neutral-700 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center transition-colors cursor-pointer"
+                        className="w-9 h-9 sm:w-8 sm:h-8 rounded-lg bg-neutral-800 text-neutral-200 hover:bg-neutral-700 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center transition-colors cursor-pointer active:scale-95"
                       >
-                        <Minus className="w-3.5 h-3.5" />
+                        <Minus className="w-4 h-4" />
                       </button>
                       <span className="w-8 text-center text-sm font-bold text-white font-mono">
                         {qty}
@@ -271,9 +271,9 @@ export const TicketList: React.FC<TicketListProps> = ({ tiers, onSelectTier }) =
                         type="button"
                         onClick={() => updateQuantity(tier.id, 1, seatsAvailable)}
                         disabled={qty >= seatsAvailable}
-                        className="w-7 h-7 rounded-lg bg-neutral-800 text-neutral-200 hover:bg-neutral-700 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center transition-colors cursor-pointer"
+                        className="w-9 h-9 sm:w-8 sm:h-8 rounded-lg bg-neutral-800 text-neutral-200 hover:bg-neutral-700 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center transition-colors cursor-pointer active:scale-95"
                       >
-                        <Plus className="w-3.5 h-3.5" />
+                        <Plus className="w-4 h-4" />
                       </button>
                     </div>
                   </div>
@@ -288,7 +288,7 @@ export const TicketList: React.FC<TicketListProps> = ({ tiers, onSelectTier }) =
                     boxShadow: `0 10px 25px -5px ${accentColor}50`,
                     color: isLightAccent ? '#000000' : '#ffffff'
                   } : undefined}
-                  className={`w-full py-3.5 px-4 rounded-2xl font-extrabold text-sm flex items-center justify-center gap-2 transition-all cursor-pointer ${
+                  className={`w-full min-h-[48px] py-3.5 px-4 rounded-2xl font-extrabold text-sm flex items-center justify-center gap-2 transition-all cursor-pointer active:scale-[0.99] ${
                     isSoldOut
                       ? 'bg-neutral-800 text-neutral-500 cursor-not-allowed'
                       : 'hover:opacity-95'
