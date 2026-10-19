@@ -1,0 +1,6 @@
+{
+  "name": "LVL Fashion Event Ticketing",
+  "description": "Official ticketing platform for LVL Fashion Event featuring M-Pesa Pochi la Biashara payments, digital QR tickets, organiser management portal, and gate check-in ticket scanner.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
